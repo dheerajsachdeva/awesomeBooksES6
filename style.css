@@ -1,9 +1,9 @@
 /* CSS to style the awesome books */
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 #articleForm div {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
