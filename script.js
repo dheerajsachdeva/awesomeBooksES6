@@ -1,4 +1,6 @@
-let books = [];
+let getBooks = JSON.parse(localStorage.getItem('books'));
+let books = getBooks || [];
+
 
 const formText = document.querySelector("#articleForm");
 
@@ -17,8 +19,13 @@ formText.addEventListener("submit", (event) => {
       id: books.length + 1,
       title: titleText,
       author: authorText,
-    });
+          });
+  let myBooks = JSON.stringify(books);
+localStorage.setItem('books', myBooks);
+
     displayData();
+    formText.elements.titleText.value = "";
+    formText.elements.authorText.value = "";
   }
 });
 
@@ -41,5 +48,25 @@ function displayData() {
 
 function removeData(id) {
   books = books.filter((book) => id !== book.id);
+  let myBooks = JSON.stringify(books);
+localStorage.setItem('books', myBooks);
   displayData();
 }
+displayData();
+
+
+const storageForm = document.querySelector('#articleForm');
+storageForm.addEventListener('input', () => {
+ 
+console.log(getBooks);
+  const data = {
+    titleText: formText.elements.titleText.value,
+    authorText: formText.elements.authorText.value,
+};
+  localStorage.setItem('storageForm', JSON.stringify(data));
+});
+const formObject = JSON.parse(localStorage.getItem('storageForm'));
+formText.elements.titleText.value = formObject.titleText;
+formText.elements.authorText.value = formObject.authorText;
+
+
