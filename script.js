@@ -1,43 +1,45 @@
-const books = [{title: "Raj",author: "William"}];
+let books = [];
 
-// const titleText = document.querySelector('#titleText').value;
-// const authorText = document.querySelector('#authorText').value;
-const formText = document.querySelector('form');
+const formText = document.querySelector("#articleForm");
 
-const title = document.querySelector('.title');
-const author = document.querySelector('.author')
+const title = document.querySelector(".title");
+const author = document.querySelector(".author");
 
-const addButton = document.querySelector('.addButton')
-const removeButton = document.querySelector('.removeButton')
-console.log(titleText, authorText);
+const addButton = document.querySelector(".addButton");
+const removeButton = document.querySelector(".removeButton");
 
-addButton.addEventListener(('click'), () =>{
-    // console.log(titleText)
-    // console.log(formText.elements.titleText)
-    // console.log(formText.elements.titleText.value)
-    const titleText = formText.elements.titleText.value;
-    const authorText = formText.elements.authorText.value;
-if (titleText && authorText){
-    books.push({title:titleText, author:authorText})
+formText.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const titleText = formText.elements.titleText.value;
+  const authorText = formText.elements.authorText.value;
+  if (titleText && authorText) {
+    books.push({
+      id: books.length + 1,
+      title: titleText,
+      author: authorText,
+    });
     displayData();
-}
-
-})
+  }
+});
 
 function displayData() {
-    console.log(books);
-    let innerHTML =""
-    for (let i=0; i<books.length; i+=1) {
-        innerHTML += `<div class="title">
-                ${books[i].title}
-            </div>
-            <div class="author">
-                ${books[i].author}
-            </div>`
-    }
-    
-    document.querySelector('#articles').innerHTML = innerHTML
+  let innerHTML = "";
+  for (let i = 0; i < books.length; i += 1) {
+    innerHTML += `
+            <article id="${books[i].length + 1}">
+                <div class="title">${books[i].title}</div>
+                <div class="author">${books[i].author}</div>
+                <button class="removeButton" onclick="removeData(${
+                  books[i].id
+                })">Remove</button>
+            </article>
+            <hr />
+            `;
+  }
+  document.querySelector("#articles").innerHTML = innerHTML;
 }
 
-
-
+function removeData(id) {
+  books = books.filter((book) => id !== book.id);
+  displayData();
+}

@@ -9,38 +9,25 @@
 <body>
     <main>
         <h1>Awesome Books</h1>
+        <section id="articles"></section>
         <section>
-            <article>
-                <div class="title">Lorem Ipsum</div>
-                <div class="author">Testeroo Testy</div>
-                <button>Remove</button>
-            </article>
-            <hr />
-            <article>
-                <div class="title">Lorem Ipsum</div>
-                <div class="aurthor">Testeroo Testy</div>
-                <button>Remove</button>
-            </article>
-            <hr />
-        </section>
-        <section>
-            <form>
+            <form id="articleForm">
                 <div>
                     <label>
-                        <input type="text" name="title" placeholder="Title" />
+                        <input type="text" name="titleText" placeholder="Title" />
                     </label>
                 </div>
                 <div>
                     <label>
-                        <input type="text" name="author" placeholder="Author" />
+                        <input type="text" name="authorText" placeholder="Author" />
                     </label>
                 </div>
                 <div>
-                    <button type="submit" name="save">Add</button>
+                    <button class="addButton" type="submit" name="save">Add</button>
                 </div>
             </form>
         </section>
-
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>

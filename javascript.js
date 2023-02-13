@@ -1,1 +1,0 @@
-/* Javascript to add functionality to the awesome books */
