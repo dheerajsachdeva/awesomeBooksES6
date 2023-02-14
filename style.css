@@ -4,6 +4,76 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  padding: 15px;
+}
+
+#articles {
+  border: 2px solid gray;
+}
+
+article {
+  padding: 10px;
+  display: flex;
+}
+
+article span.separater {
+  padding: 0 10px;
+}
+
+article button {
+  padding: 5px 12px;
+  margin-left: auto;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid gray;
+}
+
+article:nth-child(odd) {
+  background: #e3e3e3;
+}
+
+.add-book {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-book h2 {
+  text-align: center;
+  width: 100%;
+}
+
+#articleForm {
+  max-width: 300px;
+  width: 100%;
+}
+
+#articleForm input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #949191;
+  border-radius: 5px;
+}
+
+#articleForm button {
+  margin-left: auto;
+}
+
 #articleForm div {
   margin-bottom: 15px;
+}
+
+#articleForm div:last-child {
+  display: flex;
 }

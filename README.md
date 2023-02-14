@@ -1,14 +1,7 @@
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Awesome books</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -89,7 +82,7 @@ To run the project, execute the following command:
 
 👤 **Author2**
 
-- GitHub: [@Luchy-B](https://github.com/Luchy-B)
+- GitHub: [@dheerajsachdeva](https://github.com/dheerajsachdeva)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
