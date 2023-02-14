@@ -5,12 +5,13 @@ class Library {
     for (let i = 0; i < books.length; i += 1) {
       innerHTML += `
                 <article id="${books[i].id}">
-                    <div class="title">${books[i].title}</div>
-                    <div class="author">${books[i].author}</div>
-                    <button class="removeButton" onclick="Library.removeData(${books[i].id
-})">Remove</button>
+                  <div>
+                    <span class="title">"${books[i].title}"</span>
+                    <span class="separater">by</span>
+                    <span class="author">${books[i].author}</span>
+                  </div>
+                  <button class="removeButton" onclick="Library.removeData(${books[i].id})">Remove</button>
                 </article>
-                <hr />
                 `;
     } document.querySelector('#articles').innerHTML = innerHTML;
     return innerHTML;
