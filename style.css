@@ -14,11 +14,71 @@ h1 {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a.active {
+  color: blue;
+}
+
+footer,
 main {
   padding: 15px;
 }
 
+footer,
+header {
+  margin: 15px;
+  height: 50px;
+  border: 2px solid gray;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  height: 100%;
+}
+
+header nav ul li {
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid gray;
+}
+
+header nav ul li:last-child {
+  border-right: none;
+}
+
+.logo {
+  padding: 15px;
+}
+
+.date {
+  margin: 0 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 #articles {
+  max-height: 650px;
+  overflow-y: auto;
   border: 2px solid gray;
 }
 
@@ -76,4 +136,14 @@ article:nth-child(odd) {
 
 #articleForm div:last-child {
   display: flex;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }

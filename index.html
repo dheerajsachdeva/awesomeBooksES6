@@ -8,10 +8,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                Awesome Books
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">List</a></li>
+                    <li><a href="#">Add new</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="date">
+        <span>Date()</span>
+    </div>
     <main>
         <h1>All awesome books</h1>
         <section id="articles"></section>
-        <section class="add-book">
+        <section id="add-book" class="add-book hidden">
             <h2>Add a new book</h2>
             <form id="articleForm">
                 <div>
@@ -29,7 +46,26 @@
                 </div>
             </form>
         </section>
+        <section id="contact-info" class="contact-info hidden">
+            <h2>Contact information</h2>
+            <div>
+                <div>
+                    <p>Do you have any question or you just want to say "Hello"?</p>
+                    <p>You can reach out to us!</p>
+                    <ul>
+                        <li>Our e-mail: mail@mail.com</li>
+                        <li>Our phone number: 0043586534422</li>
+                        <li>Our addres: Streetname 22, 84503 City, Country</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div>
+            <span>Copyright</span>
+        </div>
+    </footer>
     <script src="./script1.js"></script>
 </body>
 </html>
