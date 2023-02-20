@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const addLink = document.querySelector('.nav-item-add');
 const listLink = document.querySelector('.nav-item-list');
 const contactLink = document.querySelector('.nav-item-contact');
