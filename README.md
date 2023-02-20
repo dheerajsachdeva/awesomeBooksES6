@@ -64,7 +64,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-desired-folder
-  git clone git@github.com:veronica365/awesome-books.git
+  git clone git@github.com:dheerajsachdeva/awesomeBooksES6.git
 ```
 
 ### Usage
@@ -77,10 +77,6 @@ To run the project, execute the following command:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author1**
-
-- GitHub: [@verocnica365](https://github.com/verocnica365)
-
-👤 **Author2**
 
 - GitHub: [@dheerajsachdeva](https://github.com/dheerajsachdeva)
 
@@ -106,7 +102,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank [Dheeraj Sachdeva](https://github.com/dheerajsachdeva) my collaboration partner on this challenge
+I would like to thank [](https://github.com/dheerajsachdeva) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
