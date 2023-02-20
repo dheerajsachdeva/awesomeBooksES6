@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import { DateTime } from './luxon.js';
 
 const time = document.querySelector('.date span');
